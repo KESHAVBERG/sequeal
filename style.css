@@ -150,7 +150,9 @@ section {
       text-align: center;
     }
   }
-
+.card{
+  height: 400px;
+}
 
   .btn-small{
     background-color: transparent;
