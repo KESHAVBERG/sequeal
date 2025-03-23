@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Rosario:ital,wght@0,300..700;1,300..700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Rosario:ital,wght@0,300..700;1,300..700&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200..700&family=Style+Script&display=swap"
         rel="stylesheet">
@@ -32,31 +34,34 @@
             </div>
         </div>
     </section>
-    <section id="Aboutus"  style="">
+    <section id="Aboutus">
         <div class="row">
-            <div class="col l12 m12 s12 about-text " style="">
-                <h6 class="fancy header-text" style="">About Us</h6>
+            <div class="col l12 m12 s12 about-text ">
+                <h6 class="fancy header-text">About Us</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, in necessitatibus doloribus eveniet,
                     alias vero adipisci fuga molestias ea blanditiis earum sed corporis neque explicabo assumenda quos
-                    incidunt. Magni, nihil.Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, in necessitatibus doloribus eveniet,
+                    incidunt. Magni, nihil.Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, in
+                    necessitatibus doloribus eveniet,
                     alias vero adipisci fuga molestias ea blanditiis earum sed corporis neque explicabo assumenda quos
                     incidunt. Magni, nihil.</p>
             </div>
         </div>
     </section>
-    <section id="recent-pics" style="padding: 10px;">
-        <div class="row">
-            <div class="col l6 s12 recentbanner">
-                
-            </div>
+    <section class="currentSection">
+        <div class="recentbanner">
+            <h4 class="recentbanner-header">Jailer 2 Experience</h4>
+            <a class="waves-effect waves-light btn-small book-now">Book Now</a>
+
         </div>
-        <h6 class="header-title header-text" style="font-size: 40px;">Our Latest Events</h6>
+    </section>
+    <section id="recent-pics" style="margin-bottom:20px">
+        <h6 class="fancy header-text">Past Events</h6>
         <div class="carousel carousel-slider center">
             <div class="carousel-item">
             </div>
-            <div class="carousel-item">  
+            <div class="carousel-item">
             </div>
-          </div>  
+        </div>
     </section>
 
     <script>
@@ -82,28 +87,28 @@
                 });
             }
             let images = [
-            './images/PastEvents/pasteven1.jpg',
-            './images/PastEvents/pastevet1.jpg',
-        ];
+                './images/PastEvents/pasteven1.jpg',
+                './images/PastEvents/pastevet1.jpg',
+            ];
 
-        // Select all carousel items
-        let carouselItems = document.querySelectorAll(".carousel-item");
+            // Select all carousel items
+            let carouselItems = document.querySelectorAll(".carousel-item");
 
-        // Assign each image as a background
-        carouselItems.forEach((item, index) => {
-            if (images[index]) {
-                item.style.backgroundImage = `url(${images[index]})`;
-                item.style.backgroundPosition = "center";
-                item.style.backgroundRepeat = "no-repeat";
-                item.style.backgroundSize = "cover";
-            }
-        });
+            // Assign each image as a background
+            carouselItems.forEach((item, index) => {
+                if (images[index]) {
+                    item.style.backgroundImage = `url(${images[index]})`;
+                    item.style.backgroundPosition = "center";
+                    item.style.backgroundRepeat = "no-repeat";
+                    item.style.backgroundSize = "cover";
+                }
+            });
 
 
             window.addEventListener("scroll", handleScroll);
             handleScroll(); // Run once on page load
         });
-      
+
     </script>
 </body>
 

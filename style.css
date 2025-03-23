@@ -19,14 +19,30 @@ html, body {
   font-weight: 500;
    font-style: italic;
   }
+  .currentSection{
+    width: 100vw;
+  }
   .recentbanner{
-    height: 300px;
-    width: 300px;
-    background-image: url(./images/PastEvents/pastevet1.jpg);
+    height: 400px;
+    width: 100vw;
+    background-image: url(./images/current.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+  .recentbanner-header{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+  }
+
 .header-title {
   font-family: "Rosario", sans-serif;
   font-optical-sizing: auto;
@@ -77,9 +93,14 @@ section {
     padding-right: 10%;
   }
   #recent-pics{
+    text-align: center;
     display: flex;
-    justify-content: center;
+    width: 100vw;
+    overflow-y: hidden;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
     width: 100vw;
   }
   #header{
@@ -112,4 +133,26 @@ section {
     .carousel.carousel-slider .carousel-item {
       width: 50%;
     }
+  }
+  @media only screen and (max-width: 600px) {
+    .recentbanner{
+      height: 400px;
+      width: 100vw;
+      background-image: url(./images/currentsmaller.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+
+  .btn-small{
+    background-color: transparent;
+    border: 1px solid white;
   }
