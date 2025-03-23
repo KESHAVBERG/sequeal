@@ -1,20 +1,43 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    font-family: "Rosario", sans-serif;
+    font-optical-sizing: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  overflow-x: hidden;
 }
 
 
 .fancy {
-    font-family: "Oswald", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Rosario", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+   font-style: italic;
   }
+  .recentbanner{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/PastEvents/pastevet1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header-title {
+  font-family: "Rosario", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+}
   
 section {
+  overflow-x: hidden;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100vh;
     width: 100vw;
   }
   @keyframes slideIn {
@@ -29,9 +52,7 @@ section {
 }
 
 .about-text {
-    opacity: 0; /* Initially hidden */
-    transform: translateX(-50px);
-
+    opacity: 0;
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -43,30 +64,38 @@ section {
     font-style: normal;
   }
   #Aboutus{
-    padding: 10px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 10%;
   }
   #recent-pics{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
   }
   #header{
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
   }
+  #header, .row, .col{
+    width: 100%;
+  }
   #header, h4, p{
     padding: 0;
   }
+
+
 
   @media only screen and (min-width: 600px) {
     .header-text {
@@ -77,3 +106,8 @@ section {
      }
   }
   
+  @media only screen and (min-width: 600px) {
+    .carousel.carousel-slider .carousel-item {
+      width: 50%;
+    }
+  }
